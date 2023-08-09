@@ -142,8 +142,8 @@ AUTH_USER_MODEL = 'account.User'
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_HOST_USER = 'your gmail here'
+EMAIL_HOST_PASSWORD = 'your host password here'
 EMAIL_USE_TLS = True
 
 
@@ -166,7 +166,7 @@ SIMPLE_JWT = {
 
 }
 
-PASSWORD_RESET_TIMEOUT=900          # 900 Sec = 15 Min
+PASSWORD_RESET_TIMEOUT=900
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",

@@ -5,9 +5,9 @@ const Navbar = () => {
   const { access_token } = getToken()
   return <>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" color="primary">
         <Toolbar>
-          <Typography variant='h5' component="div" sx={{ flexGrow: 1 }}>Geek-Shop</Typography>
+          <Typography variant='h5' component="div" sx={{ flexGrow: 1 }}>Login/Register Algorithm</Typography>
 
           <Button component={NavLink} to='/' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Home</Button>
 
